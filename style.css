@@ -1,0 +1,161 @@
+body{
+  overflow-x: hidden;
+}
+
+.container {
+
+    padding: 0px !important;
+    margin: 0px 1em !important;
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* max-width: 8em;
+  max-height: 8em; */
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  transform: translateX(0) rotate(0deg);  
+  transition: all .5s ease;
+}
+
+.card img {
+  width: auto;
+  height: auto;
+  /* max-width: 12.5em; */
+  max-height: 12.5em;
+  display: block; 
+}
+
+.card:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.card.selected{
+  border-top: 0.5em solid #900;
+
+}
+
+.card-holder{
+  margin-top: 2em;
+  width: 12.5em;
+  padding: 0 1em;
+}
+
+.card-row{
+  display: flex;
+}
+
+.shiftLeft {
+  transform: translateX(-23em);
+  transition: all .75s ease;
+}
+
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.dot {
+  height: 2em;
+  width: 2em;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+    padding: 0.3%;
+}
+
+.dot:hover{
+  transition: background-color 0.5s ease;
+  background-color: #900;
+}
+
+#nav-circles{
+  height: 10vh;
+  padding-top: 1em;
+}
+
+.card-expanded{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: arial;
+  transform: translateX(0) rotate(0deg);  
+  transition: all .75s ease;
+}
+
+.card-expanded.left{
+  width: 35%;
+}
+
+.card-expanded.left img{
+  max-width: 42vh;
+  margin-top: 2em;
+  height: 38vh;
+  width: auto;
+  border: 0.3em solid #900;
+  /* height: auto; */
+}
+
+.card-expanded.right{
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#award_details {
+    padding: 0 7em;
+}
+
+#winner_name{
+  color: #900;
+  margin-top: 1em;
+}
+
+#profile-details-section{
+  height: 60vh;
+}
+
+#winner_field{
+  margin-bottom: 1em;
+}
+
+#diss_title{
+  color: grey;
+}
+
+#profile-cards-section{
+  width: 270em;
+  height: 30vh;
+}
+
